@@ -1,4 +1,4 @@
 # Project REST-Rant
 
 REST-Rant is an app where users can review restaurants.
-Renamed repository rest-rant. Test!
+Renamed repository rest-rant. ~~Test!~~

@@ -14,17 +14,24 @@ app.engine('jsx', require('express-react-views').createEngine())
 // To import the router in places.js
 app.use('/places', require('./controllers/places'))
 
-//  Create a homepage route.
+//  Homepage route.
 app.get('/', (req, res) => {
     // This gets sent to the client
     // (your web browser most likely!)
     res.render('home')
 })
 
-// 404 page
+// 404 page route
 app.get('*', (req, res) => {
     res.render('error404')
 })
+
+
+// Index page route
+app.get('/', (req, res) => {
+    res.render('index')
+  })
+
 
 // Pull the PORT variable from the .env file
 app.listen(process.env.PORT)

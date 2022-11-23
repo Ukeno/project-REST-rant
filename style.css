@@ -24,7 +24,7 @@ body {
 
 .b {
     min-height: 50vh;
-    min-width: 14vw;
+    min-width: 12vw;
     margin: auto;
     background-color: goldenrod;
 }
@@ -38,7 +38,7 @@ body {
 
 .d {
     min-height: 50vh;
-    min-width: 14vw;
+    min-width: 12vw;
     margin: auto;
     background-color: goldenrod;
 }
@@ -61,41 +61,41 @@ body {
     }
 
     .a {
-        display: relative;
+        display: center;
         min-height: 7vh;
-        min-width: 91vw;
+        min-width: 99vw;
         margin: auto;
         border: 1px solid black;
     }
 
     .b {
-        display: relative;
-        min-height: 55vh;
-        min-width: 8vw;
-        margin: 2px 0px 2px 57px;
+        display: center;
+        min-height: 30vh;
+        min-width: 21vw;
+        margin: 2px 0px 2px 17px;
         border: 1px solid black;
     }
 
     .c {
-        display: relative;
+        display: center;
         min-height: 55vh;
-        min-width: 73.5vw;
-        margin: 2px 7px 2px 8px;
+        min-width: 49vw;
+        margin: 2px 25px 2px 25px;
         border: 1px solid black;
     }
 
     .d {
-        display: relative;
-        min-height: 55vh;
-        min-width: 8vw;
-        margin: 2px 20px 2px 0px;
+        display: center;
+        min-height: 30vh;
+        min-width: 21vw;
+        margin: 2px 0px 2px 0px;
         border: 1px solid black;
     }
 
     .e {
         display: center;
         min-height: 32vh;
-        min-width: 91vw;
+        min-width: 99vw;
         margin: auto;
         border: 1px solid black;
     }

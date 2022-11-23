@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 // 404 page
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 // Pull the PORT variable from the .env file

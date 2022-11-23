@@ -1,5 +1,5 @@
 # Routes
------
+
 | Method |  Path   |       Purpose       |
 | :----- | :------ | :------------------ |
 |  GET   |    /    | Home page |
@@ -15,7 +15,7 @@
 |  GET   |    *    | 404 page (matches any route not defined above) |
 
 # Database
------
+
 places
 
 | Field | Type |

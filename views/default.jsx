@@ -6,8 +6,8 @@ function Def(html) {
         <html>
             <head>
                 <title>Title</title>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></link>
-                <link rel="stylesheet" href="/css/style.css"></link>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+                <link rel="stylesheet" href="/css/style.css"/>
             </head>
             <body>
                 {html.children}
@@ -15,5 +15,5 @@ function Def(html) {
         </html>
     )
 }
-// Export Def function
+// Export Def
 module.exports = Def

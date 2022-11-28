@@ -18,10 +18,10 @@
 
 places
 
-| Field | Type |
+| Field Name | Data Type |
 | :---- | :--- |
-| name  | String |
-| city  | String |
-| state | String |
-| cuisines | String |
-| pic   | String |
+| name  | 'H-Thai-ML' |
+| city  | 'Seattle' |
+| state | 'WA' |
+| cuisines | 'Thai, Pan-Asian' |
+| pic   | 'http://placekitten.com/250/250' |

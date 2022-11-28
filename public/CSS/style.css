@@ -1,5 +1,9 @@
 h1 {
-    text-align: center;
-    color: cornflowerblue;
-  }
-  
+  text-align: center;
+  color: cornflowerblue;
+}
+
+/* Should be able to use bootstrap grid */
+.author, .placesPage {
+  margin:5px 538px 5px;
+}

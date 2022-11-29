@@ -3,9 +3,9 @@ const React = require('react')
 const Def = require('../default')
 // stub function export | Def component from default.jsx file wrapper
 function index(data) {
-    let placesFormatted = data.places.map((place) => {
+    let placesFormatted = data.places.map((place, index) => {
         return (
-            <div className="mx-auto">
+            <div key = {index} className="mx-auto">
                 <h2>{place.name}</h2>
                 <p className="text-left">
                     {place.cuisines}

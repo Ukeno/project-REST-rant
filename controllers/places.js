@@ -1,6 +1,5 @@
 const router = require('express').Router()
 
-//  First route 
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
@@ -18,11 +17,15 @@ router.get('/', (req, res) => {
     res.render('places/index', { places })
 })
 
-// Second Route
+router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /places')
+})
 
 router.get('/new', (req, res) => {
     res.render('places/new')
-  //res.render('places/:id')  
 })
+
+//res.render('places/:id')  
 
 module.exports = router

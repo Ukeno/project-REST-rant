@@ -1,7 +1,15 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form() {
+function new_form(data) {
+    let message = ''
+    if (data.message) {
+        message = (
+            <h4 className="alert-danger">
+                {data.message}
+            </h4>
+        )
+    }
     return (
         <Def>
             <main>
@@ -27,7 +35,7 @@ function new_form() {
                             <input className="form-control" id="state" name="state" />
                         </div>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group col-sm-6">
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>

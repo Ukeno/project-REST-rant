@@ -14,6 +14,7 @@ function new_form(data) {
         <Def>
             <main>
                 <h1>Add a New Place</h1>
+                {message}
                 <form method="POST" action="/places">
                     <div className="row">
                         <div className="form-group col-sm-6">
@@ -22,7 +23,7 @@ function new_form(data) {
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input className="form-control" id="pic" name="pic" />
+                            <input className="form-control" id="pic" name="pic" type='url' />
                         </div>
                     </div>
                     <div className="row">

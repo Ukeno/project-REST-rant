@@ -5,7 +5,6 @@ const app = express()
 const methodOverride = require('method-override')
 
 // Express Settings
-app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
@@ -16,7 +15,7 @@ app.use(methodOverride('_method'))
 app.use('/places', require('./controllers/places'))
 
 // Home route.
-app.get('/', (req, res) => {
+app.get('/', function (req, res) {
     res.render('home')
 })
 

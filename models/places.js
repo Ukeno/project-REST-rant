@@ -10,4 +10,11 @@ module.exports = [{
     state: 'AZ',
     cuisines: 'Coffee, Bakery',
     pic: '/images/coffee-cat.jpg'
-}]
+}, {
+    name: 'Windy City Pizza',
+    city: 'Silverthorne',
+    state: 'CO',
+    cuisines: 'Pizza',
+    pic: '/images/WCP.jpg'
+}
+]

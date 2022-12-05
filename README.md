@@ -25,3 +25,6 @@ places
 | state | 'WA' |
 | cuisines | 'Thai, Pan-Asian' |
 | pic   | 'http://placekitten.com/250/250' |
+
+
+

@@ -2,13 +2,14 @@
 const React = require('react')
 const Def = require('../default')
 // stub function export | Def component from default.jsx file wrapper
+
 function index(data) {
     let placesFormatted = data.places.map((place, index) => {
         return (
-            <div key = {index} className="col-sm-6">
+            <div key={index} className="col-sm-6">
                 <h2>
                     <a href={`/places/${index}`}>
-                    {place.name}
+                        {place.name}
                     </a>
                 </h2>
                 <p className="text-center">

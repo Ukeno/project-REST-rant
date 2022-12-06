@@ -6,8 +6,14 @@ function home() {
   return (
     <Def>
       <main>
+      <div className="tops"style={{
+        backgroundImage: `url("#")`
+      }}>
+      Hello!
+      </div>
+     
         <h1>REST-Rant</h1>
-        <div className="img">
+        <div className="row">
           <img src="/images/kayleigh-harrington.jpg" alt="Lounge" className="round mx-auto d-block" />
         </div>
         <div className="author">
@@ -15,6 +21,7 @@ function home() {
             kayleigh harrington</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </div>
         <a href="/places">
+          <br />
           <button className="btn-primary">Places Page</button>
         </a>
       </main>

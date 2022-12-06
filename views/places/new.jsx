@@ -14,7 +14,6 @@ function new_form(data) {
         <Def>
             <main>
                 <h1>Add a New Place</h1>
-                {message}
                 <form method="POST" action="/places">
                     <div className="row">
                         <div className="form-group col-sm-6">
@@ -23,10 +22,8 @@ function new_form(data) {
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input className="form-control" id="pic" name="pic" type='url' />
+                            <input className="form-control" id="pic" name="pic" /> {/* type='url removed for testing */}
                         </div>
-                    </div>
-                    <div className="row">
                         <div className="form-group col-sm-6">
                             <label htmlFor="city">City</label>
                             <input className="form-control" id="city" name="city" />
@@ -35,14 +32,14 @@ function new_form(data) {
                             <label htmlFor="state">State</label>
                             <input className="form-control" id="state" name="state" />
                         </div>
-                    </div>
-                    <div className="form-group col-sm-6">
-                        <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" name="cuisines" required />
-                    </div>
-                    <div className="form-group col-sm-6">
-                        <label htmlFor="founded">Founded Year</label>
-                        <input className="form-control" id="founded" name="founded" />
+                        <div className="form-group col-sm-6">
+                            <label htmlFor="founded">Founded Year</label>
+                            <input className="form-control" id="founded" name="founded" />
+                        </div>
+                        <div className="form-group col-sm-6">
+                            <label htmlFor="cuisines">Cuisines</label>
+                            <input className="form-control" id="cuisines" name="cuisines" required />
+                        </div>
                     </div>
                     <input className="btn btn-primary" type="submit" value="Add Place" />
                 </form>

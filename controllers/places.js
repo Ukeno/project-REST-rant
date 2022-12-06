@@ -1,19 +1,19 @@
 const router = require('express').Router()
 const db = require('../models')
 
-// index
+// Index route
 router.get('/', (req, res) => {
-    db.Place.find()
-    .then((places) => {
-      res.render('places/index', { places })
-    })
-    .catch(err => {
-      console.log(err) 
-      res.render('error404')
-    })
+  db.Place.find()
+  .then((places) => {
+    res.render('places', { places })
+  })
+  .catch(err => {
+    console.error('[ROUTING] ',err) 
+    res.render('error404')
+  })
 })
 
-// post
+// Post route
 router.post('/', (req, res) => {
   db.Place.create(req.body)
   .then(() => {
@@ -25,37 +25,62 @@ router.post('/', (req, res) => {
   })
 })
 
-// new
+//
 router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
-//
+// Show = catch and error?
 router.get('/:id', (req, res) => {
-  res.send('GET /places/:id stub')
+  db.Place.findById(req.params.id)
+  .then(place => {
+      res.render('places/show', { place})
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
 
-// put
+//  PUT route
 router.put('/:id', (req, res) => {
-  res.send('PUT /places/:id stub')
+  db.Place.findByIdAndUpdate(req.params.id, req.body)
+      .then(() => {
+          res.redirect(`/places/${req.params.id}`)
+      })
+      .catch(err => {
+          console.log('err', err)
+          res.render('error404')
+      })
 })
 
-// delete
+//  Delete route
 router.delete('/:id', (req, res) => {
-  res.send('DELETE /places/:id stub')
+  db.Place.findByIdAndDelete(req.params.id)
+      .then(() => {
+          res.redirect('/places')
+      })
+      .catch(err => {
+          console.log('err', err)
+          res.render('error404')
+      })
 })
 
-// edit
+//  Edit route
 router.get('/:id/edit', (req, res) => {
-  res.send('GET edit form stub')
+  db.Place.findById(req.params.id)
+      .then(place => {
+          res.render('places/edit', { place })
+      })
+      .catch(err => {
+          res.render('error404')
+      })
 })
 
-// post
 router.post('/:id/rant', (req, res) => {
   res.send('GET /places/:id/rant stub')
 })
 
-// delete
 router.delete('/:id/rant/:rantId', (req, res) => {
     res.send('GET /places/:id/rant/:rantId stub')
 })

@@ -4,11 +4,11 @@ const Def = require('../default')
 // stub function export | Def component from default.jsx file wrapper
 
 function index(data) {
-    let placesFormatted = data.places.map((place) => {
+    let placesFormatted = data.places.map((place, index) => {
         return (
-            <div key={place} className="col-sm-6">
+            <div key={index} className="col-sm-6">
                 <h2>
-                    <a href={`/places/${place.id}`}>
+                    <a href={`/places/${index}`}>
                         {place.name}
                     </a>
                 </h2>

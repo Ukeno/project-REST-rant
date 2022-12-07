@@ -5,37 +5,47 @@ function show(data) {
   return (
     <Def>
       <main>
-        <h1>Show</h1>
+        {/* <h1>Show</h1> */}
         <div className="row">
-          <div className="col-sm-8">    {/* 8 */}
-            {data.place.cuisines}
-            <br />
+          <div className="col-sm-6">    {/* 6 */}
             <img src={data.place.pic} alt={data.place.name} />
-            <br />
-            Location in {data.place.city}, {data.place.state}
+            <h3>
+              Location in {data.place.city}, {data.place.state}
+            </h3>
           </div>
-          <div className="col-sm-13"> {/* 14 */}
+          <div className="col-sm-6"> {/* 6 */}
             <h1>{data.place.name}</h1>
+            <h2>
+              Rating
+            </h2>
             <h4>currently unrated</h4>
             <br />
+            <div className="col-sm-6">
+              <h2>
+                Description
+              </h2>
+              <h3>
+                {data.place.showEstablished()}
+              </h3>
+              <h4>
+                Serving {data.place.cuisines}
+              </h4>
             <br />
-            <div className="col-sm-12"> {/* 20 */}
-              <h4>no comments yet!</h4>
-            </div>
-          </div>
-          <div className="col-sm-12"> {/* 12 */}
-            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning"> {/* place */}
+            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
               Edit
-            </a>
-            <br />
-            <form method="POST" action={`/places/${data.place.id}?_method=DELETE`} > {/* no place */}
-              <br />
+              </a>{' '}
+              <form method="POST" action={`/places/${data.place.id}?_method=DELETE`} >
               <button type="submit" className="btn btn-danger">
                 Delete
               </button>
             </form>
-            <br />
           </div>
+          </div>
+          </div>
+        <hr></hr>
+        <div className="col-sm-20"> {/* 20 */}
+          <h2>Comments</h2>
+          <h4>no comments yet!</h4>
         </div>
       </main>
     </Def>

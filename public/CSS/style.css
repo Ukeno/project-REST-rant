@@ -44,10 +44,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-.tops {
-  height: 3vh;
-}
-
 form {
   display: inline;
 }
@@ -61,7 +57,7 @@ form {
 }
 
 img {
-  height: 25em;
+  height: 35em;
 }
 
 .row {
@@ -69,6 +65,7 @@ img {
   margin: 30px;
 }
 
+/* Revised 8 */
 .revised {
   text-align: left;
   margin: 1px;

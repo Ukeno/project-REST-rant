@@ -6,12 +6,6 @@ function home() {
   return (
     <Def>
       <main>
-      <div className="tops"style={{
-        backgroundImage: `url("#")`
-      }}>
-      Hello!
-      </div>
-     
         <h1>REST-Rant</h1>
         <div className="row">
           <img src="/images/kayleigh-harrington.jpg" alt="Lounge" className="round mx-auto d-block" />

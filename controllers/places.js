@@ -25,7 +25,8 @@ router.post('/', (req, res) => {
         // Generate error message(s)
         for (var field in err.errors)
           message += `${field} was ${err.errors[field].value}.`
-        message += `${err.errors[field].message}`
+          message += `${ err.errors[field].message }.`
+        
         console.log('Validation error message', message)
         res.render('places/new', { message })
       }

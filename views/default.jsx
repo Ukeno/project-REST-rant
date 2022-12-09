@@ -25,7 +25,7 @@ function Def(html) {
                 </nav>
                 <div className="revised">
                     {/* under navbar */}
-                    &emsp; Revised 9
+                    &emsp; Number 10
                 </div>
                 {html.children}
             </body>

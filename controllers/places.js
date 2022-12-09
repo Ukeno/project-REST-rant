@@ -41,10 +41,13 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
+
 // Show = catch and error?
 router.get('/:id', (req, res) => {
   db.Place.findById(req.params.id)
+    .populate('comments')
     .then(place => {
+      console.log(place.comments)
       res.render('places/show', { place })
     })
     .catch(err => {
@@ -52,6 +55,7 @@ router.get('/:id', (req, res) => {
       res.render('error404')
     })
 })
+
 
 //  PUT route
 router.put('/:id', (req, res) => {

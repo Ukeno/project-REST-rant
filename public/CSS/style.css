@@ -13,10 +13,10 @@ h2 {
 }
 
 main {
-  margin-right: 20px;
-  margin-left: 20px;
-  padding: 20px;
-  background-color: whitesmoke;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #e5e4e2;
 }
 
 nav {
@@ -57,16 +57,10 @@ form {
 }
 
 img {
-  height: 35em;
+  height: 20em;
 }
 
 .row {
-  padding: 20px;
-  margin: 30px;
-}
-
-/* Revised 8 */
-.revised {
-  text-align: left;
-  margin: 1px;
+  padding: 2px;
+  margin: 5px;
 }

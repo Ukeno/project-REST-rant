@@ -23,10 +23,6 @@ function Def(html) {
                         </li>
                     </ul>
                 </nav>
-                <div className="revised">
-                    {/* under navbar */}
-                    &emsp; Number 10
-                </div>
                 {html.children}
             </body>
         </html>

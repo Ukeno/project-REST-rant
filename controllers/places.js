@@ -84,7 +84,7 @@ router.get('/:id/edit', (req, res) => {
 })
 
 router.post('/:id/comment', (req, res) => {
-    console.log('post comment', req.body)
+    // console.log('post comment', req.body)
     if (req.body.author === '') { req.body.author = undefined }
     req.body.rant = req.body.rant ? true : false
     db.Place.findById(req.params.id)

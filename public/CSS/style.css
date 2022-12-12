@@ -15,7 +15,9 @@ h2 {
 main {
   margin-right: 10px;
   margin-left: 10px;
-  padding: 10px;
+  margin: auto;
+  padding: 40px;
+  border: 10px solid lightblue;
   background-color: #e5e4e2;
 }
 
@@ -56,11 +58,40 @@ form {
   border: 1px solid gray;
 }
 
+
 img {
-  height: 20em;
+  height: 38em;
 }
+
 
 .row {
   padding: 2px;
   margin: 5px;
+}
+
+/* Home page image-over-image */
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* margin: 60px; */
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 3px solid whitesmoke;
+  border-radius: 1%;
+}
+
+.image2 {
+  position: absolute;
+  /* top: 0px; */
+  left: 20em;
+  /* height: 38em; */
+  width: 65%;
+  border: 2px solid whitesmoke;
+  border-radius: 2%;
+  opacity: 0.3;
 }

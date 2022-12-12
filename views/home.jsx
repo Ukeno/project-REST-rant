@@ -1,14 +1,18 @@
 // Import React and the function in default.jsx
 const React = require('react')
 const Def = require('./default')
+
 // Home stub function export| wrap the Def component | stub home page
 function home() {
   return (
     <Def>
       <main>
+        <br />
         <h1>REST-Rant</h1>
-        <div className="row">
-          <img src="/images/kayleigh-harrington.jpg" alt="Lounge" className="round mx-auto d-block" />
+        <br />
+        <div className="parent">
+          <img src="/images/Tleaf.png" alt="Lounge" className=" image2" />
+          <img src="/images/kayleigh-harrington.jpg" alt="Lounge" className="image1" />
         </div>
         <div className="author">
           Photo by <a href="https://unsplash.com/@kayleighharrington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -18,8 +22,9 @@ function home() {
           <br />
           <button className="btn-primary">Places Page</button>
         </a>
+        <br />
       </main>
-    </Def>
+    </Def >
   )
 }
 

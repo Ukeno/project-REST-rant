@@ -1,5 +1,15 @@
-# Routes
+#REST-Rant
+***
 
+#Usage
+***
+## CSS Framework: Bootstrap
+## Stack: MongoDB, Express, NodeJS
+## Stack-Side Rendering: JSX
+## Node Modules: method-override, dotenv, express-react-views
+
+# Routes
+***
 | Method |  Path   |       Purpose       |
 | :----- | :------ | :------------------ |
 |  GET   |    /    | Home page |
@@ -15,7 +25,7 @@
 |  GET   |    *    | 404 page (matches any route not defined above) |
 
 # Database
-
+***
 places
 
 | Field Name | Data Type |

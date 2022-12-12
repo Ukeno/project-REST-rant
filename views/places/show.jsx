@@ -16,10 +16,15 @@ function show(data) {
         let sumRatings = data.place.comments.reduce((tot, c) => {
             return tot + c.stars
         }, 0)
-        let averageRating = sumRatings / data.place.comments.length
+        let averageRating = Math.round(sumRatings / data.place.comments.length)
+
+        let stars = ' '
+        for (let i = 0; i < averageRating; i++) {
+            stars += '⭐'
+        }
         rating = (
             <h3>
-                {Math.round(averageRating)}stars
+                {stars}stars
             </h3>
         )
         comments = data.place.comments.map(c => {
@@ -42,7 +47,7 @@ function show(data) {
         <Def>
             <main>
                 <div className="row">
-                    <div className="col-sm-6" style={{ height: 50 }} >
+                    <div className="col-sm-6" >
                         <img src={data.place.pic} alt={data.place.name} />
                         <h3>
                             Located in {data.place.city}, {data.place.state}

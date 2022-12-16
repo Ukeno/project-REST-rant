@@ -11,6 +11,8 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
+const PORT = process.env.PORT // 11:58pm -----------
+
 // Controllers & Routes
 app.use('/places', require('./controllers/places'))
 
@@ -25,4 +27,8 @@ app.get('*', (req, res) => {
 })
 
 // Listen for Connections
-app.listen(process.env.PORT)
+// app.listen(process.env.PORT)
+// 11:58pm ---------------------------------------
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+
+module.exports = app;

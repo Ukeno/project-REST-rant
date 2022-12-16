@@ -17,7 +17,6 @@ main {
   margin-left: 10px;
   margin: auto;
   padding: 40px;
-  border: 10px solid lightblue;
   background-color: #e5e4e2;
 }
 
@@ -58,12 +57,11 @@ form {
   border: 1px solid gray;
 }
 
-
+/*
 img {
-  height: 38em;
+  height: 24em;
 }
-
-
+*/
 .row {
   padding: 2px;
   margin: 5px;
@@ -87,11 +85,10 @@ img {
 
 .image2 {
   position: absolute;
-  /* top: 0px; */
+  top: 0px;
   left: 20em;
-  /* height: 38em; */
+  height: 38em;
   width: 65%;
   border: 2px solid whitesmoke;
   border-radius: 2%;
-  opacity: 0.3;
 }

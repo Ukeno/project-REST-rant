@@ -47,7 +47,7 @@ function show(data) {
         <Def>
             <main>
                 <div className="row">
-                    <div className="col-sm-6" >
+                    <div className="col-sm-6" style={{ height: 50 }} >
                         <img src={data.place.pic} alt={data.place.name} />
                         <h3>
                             Located in {data.place.city}, {data.place.state}
